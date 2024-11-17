@@ -3,4 +3,4 @@ PyPDF2==3.0.1
 streamlit
 langchain
 PyPDF2
-docx
+python-docx
