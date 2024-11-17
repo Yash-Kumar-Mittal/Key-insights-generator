@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 import streamlit as st
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import HumanMessage
@@ -6,7 +7,8 @@ from langchain.text_splitter import CharacterTextSplitter
 from PyPDF2 import PdfReader
 import docx
 
-OPENAI_API_KEY = "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"
+load_dotenv()
+api_key = os.getenv("OPENAI_API_KEY")
 
 
 def extract_text_from_pdf(file):
@@ -55,7 +57,7 @@ if st.button("Generate Insights"):
         splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
         chunks = splitter.split_text(story)
 
-        chat = ChatOpenAI(model="gpt-3.5-turbo", openai_api_key=OPENAI_API_KEY, temperature=0.7)
+        chat = ChatOpenAI(model="gpt-3.5-turbo", openai_api_key=api_key, temperature=0.7)
         
         insights = []
         for chunk in chunks:
