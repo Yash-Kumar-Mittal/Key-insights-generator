@@ -28,9 +28,9 @@ The **Key Insights Generator** is a web application designed to extract meaningf
 
 ## Tools and Technologies Used
 - **Frontend**:
-  - [Streamlit](https://streamlit.io/) for creating an interactive web interface.
+  - Streamlit for creating an interactive web interface.
 - **Backend**:
-  - [LangChain](https://langchain.com/) for managing and processing language model interactions.
+  - LangChain for managing and processing language model interactions.
   - OpenAI's `gpt-3.5-turbo` for generating insights.
 - **File Handling**:
   - `PyPDF2` for extracting text from PDF files.
@@ -67,10 +67,6 @@ The **Key Insights Generator** is a web application designed to extract meaningf
 5. **Access the Web App**:
    - Open your browser and navigate to `http://localhost:8501`.
 
-## Sample Use Cases
-- Extracting productivity-related insights from a self-help book.
-- Summarizing career advice from a long blog or article.
-- Analyzing and retrieving key takeaways from meeting notes or documentation.
 
 ## Project Structure
 ```
@@ -81,11 +77,3 @@ The **Key Insights Generator** is a web application designed to extract meaningf
 ├── README.md              # Project documentation
 ```
 
-## Future Enhancements
-- Add support for more file formats (e.g., `EPUB`).
-- Include advanced filtering options for insights.
-- Extend support to `GPT-4` and other models for more nuanced insights.
-- Implement user authentication for personalized experiences.
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
